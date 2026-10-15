@@ -129,6 +129,8 @@ ignore = [
   "S603",
   # Ignore complexity
   "C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+  # kiwix-build is a CLI tool: print() is how it reports progress to the user
+  "T201",
 ]
 unfixable = [
   # Don't touch unused imports
